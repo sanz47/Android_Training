@@ -2,6 +2,7 @@ package com.example.androidtraining;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -15,12 +16,20 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button click=findViewById(R.id.clickBtn);
+        Button nxtpg=findViewById(R.id.nxtpg);
         TextView txtMsg=findViewById(R.id.txtMsg);
         click.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 txtMsg.setText("Good Bye");
-                Toast.makeText(MainActivity.this, "Button Clicked", Toast.LENGTH_SHORT).show();
+            }
+        });
+        nxtpg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(MainActivity.this, "Going to Next Page", Toast.LENGTH_SHORT).show();
+                Intent nxtPage=new Intent(MainActivity.this,Activity2.class);
+                startActivity(nxtPage);
             }
         });
     }

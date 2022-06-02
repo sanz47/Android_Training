@@ -27,4 +27,15 @@
         android:text="Click Me"
         android:textColor="@color/white" />
 
+    <Button
+        android:id="@+id/nxtpg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next Page"
+        android:backgroundTint="#EAFF7B"
+        android:textColor="@color/black"
+        android:layout_below="@id/clickBtn"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"/>
+
 </RelativeLayout>
