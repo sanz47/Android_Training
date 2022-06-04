@@ -13,8 +13,10 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="225dp"
+        android:fontFamily="@font/aclonica"
         android:text="Hello World!"
-        android:textStyle="bold|italic" />
+        android:textSize="30dp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/clickBtn"
