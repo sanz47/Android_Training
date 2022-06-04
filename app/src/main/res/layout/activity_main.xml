@@ -4,17 +4,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="#FCFFE9">
+    android:background="#FCFFE9"
+    android:id="@+id/parent">
 
     <TextView
         android:id="@+id/txtMsg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="225dp"
-        android:textStyle="bold|italic"
-        />
+        android:text="Hello World!"
+        android:textStyle="bold|italic" />
 
     <Button
         android:id="@+id/clickBtn"
@@ -23,7 +23,7 @@
         android:layout_below="@id/txtMsg"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
-        android:backgroundTint="@color/blood_red"
+        android:backgroundTint="@color/dark_red"
         android:text="Click Me"
         android:textColor="@color/white" />
 
@@ -37,5 +37,15 @@
         android:layout_below="@id/clickBtn"
         android:layout_marginTop="30dp"
         android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_below="@id/nxtpg"
+        android:id="@+id/snackbar"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Snackbar"
+        android:backgroundTint="@color/teal"/>
 
 </RelativeLayout>
